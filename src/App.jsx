@@ -1,13 +1,15 @@
-import Login from "./components/Login"
-import InfoUser from "./components/InfoUser"
+import Navbar from "./components/Navbar"
 import UserProvider from "./context/UserProvider"
+import { Outlet } from "react-router"
 
 const App = () => {
     return (
         <UserProvider>
             <>
-                <Login />  
-                <InfoUser />
+                <Navbar />
+                <div className="container">
+                    <Outlet />
+                </div>
             </>
         </UserProvider>
     )
