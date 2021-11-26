@@ -10,18 +10,18 @@ const Login = () => {
 
     if(user){
         return (
-            <div>
+            <>
                 <h1>Activo</h1>
                 <button onClick={() => setUser(false)}>Salir</button> 
-            </div>
+            </>
         )
     }
 
     return (
-        <div>
+        <>
            <h1>Offline</h1>
            <button onClick={() => setUser(true)}>Ingresar</button> 
-        </div>
+        </>
     )
 }
 

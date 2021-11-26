@@ -5,10 +5,10 @@ import UserProvider from "./context/UserProvider"
 const App = () => {
     return (
         <UserProvider>
-            <div>
+            <>
                 <Login />  
                 <InfoUser />
-            </div>
+            </>
         </UserProvider>
     )
 }

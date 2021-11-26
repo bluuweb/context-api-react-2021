@@ -6,13 +6,13 @@ const InfoUser = () => {
     const {user} = useContext(UserContext)
 
     return (
-        <div>
+        <>
             <h2>
                 {
                     user ? 'activo' : 'offline'
                 }
             </h2>
-        </div>
+        </>
     )
 }
 
